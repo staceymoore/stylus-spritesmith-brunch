@@ -1,3 +1,8 @@
+0.1.3 / 2013-12-13
+==================
+
+ * Add keywords to package.json
+ * Fix header levels in README
 
 0.1.2 / 2013-12-13
 ==================
