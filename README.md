@@ -4,7 +4,7 @@ stylus-spritesmith-brunch
 Adds Stylus support to Brunch with automatic sprite sheet generation.
 
 Usage
-=====
+-----
 
 Install the plugin via npm with `npm install --save stylus-spritemith-brunch`.
 
@@ -16,7 +16,7 @@ Or, do manual install:
 *Note: This plugin is a replacement for `stylus-brunch`.*
 
 Using Sprites
-=============
+-------------
 
 This plugin defines Stylus mixins, variables, and functions that make using sprites in your stylesheets almost effortless.
 
@@ -24,7 +24,7 @@ Just drop images into `app/assets/images/sprites`, and a sprite sheet will be co
 
 If you need to configure the input and output directories, reference the **Plugin Options** section.
 
-## Mixin
+### Mixin
 
 The `sprite` mixin is the easiest way to use a sprite image. To use the mixin, you must first import it into your stylesheets.
 
@@ -47,7 +47,7 @@ If you have multiple sprite sheets, a second argument can be given to specify th
 }
 ```
 
-## Variables and Functions
+### Variables and Functions
 
 The following variables and functions are also available for use in your stylesheets.
 
@@ -57,7 +57,7 @@ The following variables and functions are also available for use in your stylesh
 | `default-sprite-sheet` | String  | Value of config option `plugins.sprites.defaultSheet`
 | `extend-sprite-sheets` | Boolean | Value of config option `plugins.sprites.useExtendDirective`
 
-### Sprite Sheet Functions
+#### Sprite Sheet Functions
 
 These functions return values about a given `sprite-sheet`.
 
@@ -67,7 +67,7 @@ These functions return values about a given `sprite-sheet`.
 | `sprite-sheet-width`  | Unit, `px` — width of an entire sprite sheet
 | `sprite-sheet-height` | Unit, `px` — height of an entire sprite sheet
 
-### Sprite Images
+#### Sprite Images
 
 These functions return values about a given `image`. A second, optional `sprite-sheet` argument can be given to specify the sprite sheet to which the image belongs.
 
@@ -79,7 +79,7 @@ These functions return values about a given `image`. A second, optional `sprite-
 | `sprite-image-y`      | Unit, `px` — y-position of a sprite
 
 Plugin Options
-==============
+--------------
 
 Options for Stylus and Spritesmith can be set in the `plugins` object in your `brunch-config`. All values below are the defaults.
 
@@ -163,7 +163,7 @@ plugins: {
 ```
 
 License
-=======
+-------
 
 The MIT License (MIT)
 
