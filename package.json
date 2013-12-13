@@ -1,7 +1,17 @@
 {
   "name": "stylus-spritesmith-brunch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Adds Stylus support to Brunch with automatic sprite sheet generation.",
+  "keywords": [
+    "brunch",
+    "stylus",
+    "stylesheet",
+    "sprite",
+    "sprites",
+    "spritesheet",
+    "assets",
+    "css"
+  ],
   "author": "Jason Sandmeyer",
   "homepage": "https://github.com/jas/stylus-spritesmith-brunch",
   "repository": {
