@@ -1,0 +1,17 @@
+sprite-sheet(sheet)
+  display inline-block
+  background-image url(sprite-sheet-path(sheet))
+  background-size sprite-sheet-width(sheet) sprite-sheet-height(sheet)
+
+for sheet in sprite-sheets
+  $sprites-{sheet}
+    sprite-sheet(sheet)
+
+sprite(image, sheet = default-sprite-sheet)
+  if (extend-sprite-sheets is true)
+    @extend $sprites-{sheet}
+  else
+    sprite-sheet(sheet)
+  width sprite-image-width(image, sheet)
+  height sprite-image-height(image, sheet)
+  background-position sprite-image-x(image, sheet) sprite-image-y(image, sheet)

@@ -1,0 +1,22 @@
+{
+  "name": "stylus-spritesmith-brunch",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Jason Sandmeyer",
+  "homepage": "https://github.com/jas/stylus-spritesmith-brunch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jas/stylus-spritesmith-brunch"
+  },
+  "main": "./lib/index",
+  "dependencies": {
+    "loggy": "~0.2.0",
+    "stylus": "~0.41.2",
+    "nib": "~1.0.1",
+    "spritesmith": "~0.14.0",
+    "progeny": "~0.2.1",
+    "findit": "~1.1.0",
+    "async": "~0.2.9",
+    "mkdirp": "~0.3.5"
+  }
+}
