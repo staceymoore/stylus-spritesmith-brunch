@@ -7,11 +7,12 @@ for sheet in sprite-sheets
   $sprites-{sheet}
     sprite-sheet(sheet)
 
-sprite(image, sheet = default-sprite-sheet)
+sprite(image, sheet = default-sprite-sheet, scale = 1)
   if (extend-sprite-sheets is true)
     @extend $sprites-{sheet}
   else
     sprite-sheet(sheet)
-  width sprite-image-width(image, sheet)
-  height sprite-image-height(image, sheet)
-  background-position (0 - sprite-image-x(image, sheet)) ( 0 - sprite-image-y(image, sheet))
+  width sprite-image-width(image, sheet) * scale
+  height sprite-image-height(image, sheet) * scale
+  background-size (sprite-sheet-width(sheet) * scale)  (sprite-sheet-height(sheet) * scale)
+  background-position ((0 - sprite-image-x(image, sheet)) * scale) (( 0 - sprite-image-y(image, sheet)) * scale)
